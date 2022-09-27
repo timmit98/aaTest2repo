@@ -11,6 +11,23 @@
 					"variableName": "aaVar1",
 					"value": "'aaaaaa'"
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "SetValueOf_aaVar1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "aaVar1",
+					"value": "'bbbbbb-new value'"
+				}
 			}
 		],
 		"variables": {
